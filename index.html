@@ -27,6 +27,7 @@ a{color:#EDEBE6;text-decoration:none}
 a:hover{color:#FFFFFF}
 .menu-btn{background:none;border:0;padding:6px 0;margin:0;font:inherit;text-align:left;cursor:pointer;display:flex;gap:14px;align-items:baseline;min-height:32px}
 .menu-btn:hover span{color:#FFFFFF}
+@media (max-width: 700px){.side{padding:48px 24px 8px !important;gap:28px !important}.content{padding:24px 24px 64px !important}}
 </style>
 
 <style>.view{display:none}.view.on{display:block} .nav span{color:#8C8C8C} .nav.on span{color:#FFFFFF}</style>
@@ -35,10 +36,10 @@ a:hover{color:#FFFFFF}
 
 <div style="background: #000000; color: #EDEBE6; font-family: 'Archivo', system-ui, sans-serif; min-height: 100vh; display: flex; flex-wrap: wrap; align-items: flex-start; max-width: 1320px; margin: 0 auto; padding: 0 clamp(0px, 5vw, 96px); box-sizing: border-box">
 
-<aside style="flex: 1 1 260px; max-width: 320px; box-sizing: border-box; padding: 96px 40px 48px; display: flex; flex-direction: column; gap: 44px">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<button type="button" class="menu-btn" data-go="home" style="padding: 0"><span style="font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #EDEBE6">Maxim Arbugaev</span></button>
-<span style="font-size: 11px; color: #EDEBE6; text-transform: uppercase; letter-spacing: 0.14em; line-height: 1.6">Director<br/>Cinematographer</span>
+<aside class="side" style="flex: 1 1 260px; max-width: 320px; box-sizing: border-box; padding: 96px 40px 48px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<button type="button" class="menu-btn" data-go="home" style="padding: 0"><span style="display: block; font-size: 20px; font-weight: 300; letter-spacing: 0.32em; line-height: 1.35; text-transform: uppercase; color: #EDEBE6">Maxim<br/>Arbugaev</span></button>
+<span style="font-size: 10px; color: #8C8C8C; text-transform: uppercase; letter-spacing: 0.2em; line-height: 1.6; white-space: nowrap">Director · Cinematographer</span>
 </div>
 
 <nav aria-label="Films" style="display: flex; flex-direction: column; gap: 2px; font-size: 14px">
@@ -58,7 +59,7 @@ a:hover{color:#FFFFFF}
 </nav>
 </aside>
 
-<main style="flex: 999 1 640px; min-width: 0; box-sizing: border-box; padding: 96px clamp(20px, 4vw, 56px) 80px">
+<main class="content" style="flex: 999 1 640px; min-width: 0; box-sizing: border-box; padding: 96px clamp(20px, 4vw, 56px) 80px">
 
 <section class="view" data-view="home">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 980px">
